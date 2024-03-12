@@ -1,3 +1,6 @@
+import sys
+
+
 def check_if_anagram(text1: str, text2: str):
     count_letters_text1 = {}
     count_letters_text2 = {}
@@ -19,4 +22,4 @@ def check_if_anagram(text1: str, text2: str):
     return "Is anagram!"
 
 
-print(check_if_anagram("nbu", "ubn"))
+print(check_if_anagram(sys.argv[1], sys.argv[2]))
